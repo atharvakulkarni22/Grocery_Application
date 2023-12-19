@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Breakfast and Cereal
+	</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<header>
+<div id="heading">
+<h1>
+	My Grocery
+</h1>
+</div>
+</header>
+<nav>
+	<div class = "navbar">
+		<strong>
+			<a href="FreshProducts.html">Fresh Products</a>
+			<a href="Frozen.html">Frozen</a>
+			<a href="Pantry.html">Pantry</a>
+			<a href="BreakfastCereal.html">Breakfast and Cereal</a>
+			<a href="Baking.html">Baking</a>
+			<a href="Snacks.html">Snacks</a>
+			<a href="Candy.html">Candy</a>
+			<a href="SpecialityShops.html">Speciality Shops</a>
+			<a href="Deals.html">Deals</a>
+			<a href="MyAccount.html">My Account</a>
+			<a href="AboutUs.html">About Us</a>
+			<a href="ContactUs.html">Contact Us</a>
+		</strong>
+	</div>
+</nav>
+<<div class="row">
+	<h3>
+		Breakfast and Cereal
+	</h3>
+</div>
+<div class="row">
+	<div class="columnleft">
+		<ul style="list-style-type: none">
+			<a href="BreakfastCereal.html"><li id="sidenav"> Bread </li></a>
+			<a href="Cereal.html"><li id="sidenav"> Cereal </li></a>
+		</ul>
+	</div>
+	<div class = "columnright">
+	<div style="font-size:16px">
+		<em><strong>Breads<strong><em>
+		<hr>
+	</div>
+	<div class="Products">
+		<p>
+			<img src = "bread.jpg" height = "50" width = "50" style="vertical-align:center">White Bread</img>
+			<div class="Price"> Price - 2.6$ </div>
+		</p>
+	</div> 
+</div>
+</div>
+<footer align="center">
+  <p id="foot">Author: Atharva Kulkarni<br>
+  <a href="mailto:ajk220007@utdallas.edu">ajk220007@utdallas.edu</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,134 @@
+.navbar {
+	text-align: center;
+	background-color: lightblue;
+	padding-top: 40px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 70px;
+}
+
+.navbar a {
+	text-align: center;
+	padding: 14px 16px;
+}
+
+h3 {
+	text-align: center;
+	visibility: visible;
+}
+
+h1 {
+	text-align: center;
+	text-shadow: 2px 2px #00FFFF;
+	font-style: italic;
+}
+
+#heading {
+	background-image: url("grocery.jpg");
+	background-repeat: repeat-x;
+	height: 200;
+	padding-top: 50px;
+	padding-right: 30px;
+	padding-bottom: 50px;
+	padding-left: 80px;
+	horizontal-align:center;
+}
+
+#foot p {
+	font-weight: bold;
+}
+
+a:link {     
+	color: red;
+}
+a:visited {     
+	color: blue;;
+}
+a:hover {     
+	color: green;
+	background-color: red;
+}
+a:active
+{     color: purple;
+}
+
+.columnleft {
+  float: left;
+  width: 25.00%;
+  height: 1000px;
+  background-color: cyan;
+  text-align: center;
+}
+
+ul {
+	padding-left :4px;
+	padding-right: 4px;
+	font-size: 20px;
+	background-color: block;
+	top: 50px;
+    left: 0px;
+    width: 100%;
+	height: 46px;
+	padding: 14px 16px;
+}
+
+.Products {
+	vertical-align:center;
+}
+
+#sidenav {
+    height: 25px;
+	padding-top: 3px;
+	height:22px;
+	padding: 5px;
+	font-size: 25px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.columnright {
+  float: left;
+  width: 75.00%;
+  height: 1000px;
+  background-color:#7CB9E8;
+}
+
+img {
+	padding-left:10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input {
+	border: 2px solid #555;
+	border-style: groove;
+	border-color: green;
+	border-width: 2px;
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.Price {
+	position: static;
+	padding-left: 20px;
+}
+
+p.dis {
+	display:inline;
+	text-align:center;
+}
+
+#contactback {
+	opacity: 0.8;
+	padding-top:5px;
+	text-align: center;
+}

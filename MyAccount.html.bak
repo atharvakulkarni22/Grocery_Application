@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		My Account
+	</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<header>
+<div id="heading">
+<h1>
+	My Grocery
+</h1>
+</div>
+</header>
+<nav>
+	<div class = "navbar">
+		<strong>
+			<a href="FreshProducts.html">Fresh Products</a>
+			<a href="Frozen.html">Frozen</a>
+			<a href="Pantry.html">Pantry</a>
+			<a href="BreakfastCereal.html">Breakfast and Cereal</a>
+			<a href="Baking.html">Baking</a>
+			<a href="Snacks.html">Snacks</a>
+			<a href="Candy.html">Candy</a>
+			<a href="SpecialityShops.html">Speciality Shops</a>
+			<a href="Deals.html">Deals</a>
+			<a href="MyAccount.html">My Account</a>
+			<a href="AboutUs.html">About Us</a>
+			<a href="ContactUs.html">Contact Us</a>
+		</strong>
+	</div>
+</nav>
+<div class="row">
+	<h3>
+		My Account
+	</h3>
+</div>
+<div class="row">
+	<div class="columnleft">
+		<ol>
+			<li>Name  : Atharva Kulkarni</li>
+			<li>Email : ajk220007@utdallas.edu</li>
+			<li>Contact No. : +1(945)257-4028 </li>
+		</ol>
+	</div>
+	<div class = "columnright">
+<div align="center">
+<div style="padding-left:2px">Check your past orders?</div><input type="button" value="Past Orders">
+<p></p>
+<div id="formelement">
+	Would you like to subscribe to our newsletter?<br>
+	<form>
+		First Name : <input type="text"> <br>
+		Last Name : <input type="text"> <br>
+		Email : <input type="email"> <br>
+		<input type="button" value="Subscribe">
+	</form>
+</div>
+</div>
+</div>
+<footer align="center">
+  <p id="foot">Author: Atharva Kulkarni<br>
+  <a href="mailto:ajk220007@utdallas.edu">ajk220007@utdallas.edu</a></p>
+</footer>
+</body>
+</html>

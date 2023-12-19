@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		About Us
+	</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<header>
+<div id="heading">
+<h1>
+	My Grocery
+</h1>
+</div>
+</header>
+<nav>
+	<div class = "navbar">
+		<strong>
+			<a href="FreshProducts.html">Fresh Products</a>
+			<a href="Frozen.html">Frozen</a>
+			<a href="Pantry.html">Pantry</a>
+			<a href="BreakfastCereal.html">Breakfast and Cereal</a>
+			<a href="Baking.html">Baking</a>
+			<a href="Snacks.html">Snacks</a>
+			<a href="Candy.html">Candy</a>
+			<a href="SpecialityShops.html">Speciality Shops</a>
+			<a href="Deals.html">Deals</a>
+			<a href="MyAccount.html">My Account</a>
+			<a href="AboutUs.html">About Us</a>
+			<a href="ContactUs.html">Contact Us</a>
+		</strong>
+	</div>
+</nav>
+<div class="row">
+	<h3>
+		About Us
+	</h3>
+</div>
+<div class="row">
+	<div class="columnleft">
+	</div>
+	<div class = "columnright" style="text-align:center;">
+	<img src="store.jpeg" width = "100%" height = "400">
+	<p>From our humble beginnings as a small discount retailer in Rogers, Ark., Walmart has opened thousands of stores in the U.S. and expanded internationally. Through innovation, we're creating a seamless experience to let customers shop anytime and anywhere online and in stores. We are creating opportunities and bringing value to customers and communities around the globe. Walmart operates approximately 10,500 stores and clubs in 19 countries and eCommerce websites. <span class="dis">We employ 2.1 million associates around the world — nearly 1.6 million in the U.S. alone.</span></p>
+	<p>
+		<dl>
+			<dt> Our Location: </dt>
+			<dd> Frisco </dd>
+		</dl>
+	</p>
+	</div>
+<footer align="center">
+  <p id="foot">Author: Atharva Kulkarni<br>
+  <a href="mailto:ajk220007@utdallas.edu">ajk220007@utdallas.edu</a></p>
+</footer>
+</body>
+</html>

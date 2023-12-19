@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Contact Us
+	</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<header>
+<div id="heading">
+<h1>
+	My Grocery
+</h1>
+</div>
+</header>
+<nav>
+	<div class = "navbar">
+		<strong>
+			<a href="FreshProducts.html">Fresh Products</a>
+			<a href="Frozen.html">Frozen</a>
+			<a href="Pantry.html">Pantry</a>
+			<a href="BreakfastCereal.html">Breakfast and Cereal</a>
+			<a href="Baking.html">Baking</a>
+			<a href="Snacks.html">Snacks</a>
+			<a href="Candy.html">Candy</a>
+			<a href="SpecialityShops.html">Speciality Shops</a>
+			<a href="Deals.html">Deals</a>
+			<a href="MyAccount.html">My Account</a>
+			<a href="AboutUs.html">About Us</a>
+			<a href="ContactUs.html">Contact Us</a>
+		</strong>
+	</div>
+</nav>
+<div class="row">
+	<h3>
+		Contact Us
+	</h3>
+</div>
+<div class="row">
+	<div class="columnleft">
+	</div>
+	<div class = "columnright">
+<div align="center">
+<p> If you have any queries please feel free to contact us. </p>
+	<table border="1px">
+		<tr> 
+			<td> First Name </td>
+			<td> <input type="text" id="name1">
+		</tr>
+		<tr> 
+			<td> Last Name </td>
+			<td> <input type="text" id="name2">
+		</tr>
+		<tr> 
+			<td> Email </td>
+			<td> <input type="email" id="email1">
+		</tr>
+		<tr> 
+			<td> Contact Number </td>
+			<td> <input type="text" id="phone">
+		</tr>
+		<tr> 
+			<td> Gender</td>
+			<td> <input type="radio" name="gender_radio" id="myRadio"> Male </input> <input type="radio" name="gender_radio" id="myRadio"> Female </input> </td>
+		</tr>
+		<tr> 
+			<td> Comment </td>
+			<td> <input type="text" id="comment">
+		</tr>
+	</table>
+	<p></p>
+	<button onclick="myFunction()">Submit</button>
+</div>
+<div id="contactback"> 
+	<img src = "grocerycontact.jpg">
+</div>
+</div>
+<footer align="center">
+  <p id="foot">Author: Atharva Kulkarni<br>
+	NetId : AJK220007</p>
+</footer>
+
+<script>
+		function myFunction() {
+			let letters = /^[A-Z][a-zA-Z]+$/;
+			let inputtxt1 = document.getElementById("name1").value;
+			let inputtxt2 = document.getElementById("name2").value;
+			if(!(inputtxt1.match(letters)) || !(inputtxt2.match(letters)))
+			{
+				alert("Please Enter only alphabets for the name and the firt letter should be captial for both First and Last Name");
+			}
+			
+			let emailregex = /^[a-z0-9]+@[a-z]+\.[a-z]{2,3}$/;
+			let inputEmail = document.getElementById("email1").value;
+			if(!(inputEmail.match(emailregex))) 
+			{
+				alert("Please enter valid email id");
+			}
+			
+			let commentRegex = /^[\s\S]{10,}/;
+			let inputComment = document.getElementById("comment").value
+			if(!(inputComment.match(commentRegex))) 
+			{
+				alert("Comment should be atleast 10 characters");
+			}
+			
+			var x = document.getElementById("myRadio").checked;
+			if (!x) {
+				alert("Please select a gender");
+			}
+			
+			let phoneRegex = /^[(][0-9]{3}[)][\s]?[0-9]{3}-[0-9]{4}$/im;
+			let inputPhone = document.getElementById("phone").value;
+			if(!(inputPhone.match(phoneRegex)))
+			{
+				alert("Please enter phone number of valid format");
+			}
+		}
+	</script>
+
+</body>
+</html>

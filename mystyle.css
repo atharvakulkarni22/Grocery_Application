@@ -1,0 +1,457 @@
+.navbarnav {
+	text-align: center;
+	background-color: lightblue;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 70px;
+	width: 100%;
+}
+
+.navbarnav a {
+	text-align: center;
+	padding: 14px 16px;
+}
+
+h3 {
+	text-align: center;
+	visibility: visible;
+}
+
+h1 {
+	text-align: center;
+	text-shadow: 2px 2px #00FFFF;
+	font-style: italic;
+}
+
+#heading {
+	background-image: url("images/grocery.jpg");
+	background-repeat: repeat-x;
+	height: 200;
+	padding-top: 50px;
+	padding-right: 30px;
+	padding-bottom: 50px;
+	padding-left: 80px;
+	width: 97%;
+}
+
+#foot p {
+	font-weight: bold;
+}
+
+a:link {
+	color: red;
+}
+
+a:visited {
+	color: blue;
+}
+
+a:hover {
+	color: green;
+	background-color: black
+}
+
+a:active {
+	color: purple;
+}
+
+.wrapper {
+	height: 100%;
+	width: 100%;
+}
+
+.content {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+.columnleft {
+	display: table-cell;
+	background-color: cyan;
+	text-align: center;
+	vertical-align: top;
+}
+
+ul {
+	padding-left: 4px;
+	padding-right: 4px;
+	font-size: 20px;
+	background-color: block;
+	width: 100%;
+}
+
+#sidenav {
+	padding: 5px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.cartdiv {
+	background-color: #4eb060;
+	font-size: large;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: bold;
+}
+
+.columnright {
+	display: table-cell;
+	position: relative;
+}
+
+.row:after {
+	display: table;
+	clear: both;
+}
+
+input {
+	border: 2px solid #555;
+	border-style: groove;
+	border-color: green;
+	border-width: 2px;
+}
+
+p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+p.dis {
+	display: inline;
+	text-align: center;
+}
+
+#contactback {
+	opacity: 0.8;
+	padding-top: 5px;
+	text-align: center;
+}
+
+.filterDiv {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.product-box img {
+	width: 90%;
+	height: 180px;
+	object-fit: contain;
+	object-position: center;
+	margin: 10px;
+}
+
+.product-box {
+	width: 30%;
+	border: 2px solid #eeeeee;
+	border-radius: 20px;
+	background-color: #ffffff;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin-left: 10px;
+	float: left;
+}
+
+.product-box strong {
+	color: #202020;
+	font-size: 1.1rem;
+	letter-spacing: 1px;
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+.product-box .quantity {
+	color: #949494;
+	font-size: 0.8rem;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+.product-box .price {
+	margin-top: 10px;
+	font-weight: 600;
+	font-size: 1.4rem;
+	color: #393939;
+}
+
+.product-box .cart-btn {
+	width: 100%;
+	height: 40px;
+	background-color: #ecf7ee;
+	color: #4eb060;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	transition: all ease 0.3s;
+	border-radius: 20px;
+}
+
+.product-box .cart-btn i {
+	margin-right: 10px;
+}
+
+.product-box .cart-btn:hover {
+	background-color: #4eb060;
+	color: #ffffff;
+}
+
+.product-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 50px;
+	align-items: center;
+	margin: 20px 0px;
+}
+
+.search-box {
+	width: 50%;
+	height: 40px;
+	padding-left: 10px;
+	margin-left: 100px;
+}
+
+.search-box i {
+	font-size: 1rem;
+}
+
+.search-box {
+	height: 30px;
+}
+
+.procontainer {
+	max-width: 650px;
+	justify-content: space-around;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.items_header {
+	width: 100%;
+	max-width: 650px;
+	display: flex;
+	justify-content: flex-start;
+	border-bottom: 4px solid lightgrey;
+	margin: 0 auto;
+}
+
+.item_Number {
+	width: 5%;
+	display: flex;
+	padding-bottom: 4px;
+	border-bottom: 1px solid lightgrey;
+}
+
+.category {
+	width: 10%;
+	display: flex;
+	padding-bottom: 4px;
+	border-bottom: 1px solid lightgrey;
+}
+
+.subcategory {
+	width: 10%;
+	display: flex;
+	padding-bottom: 4px;
+	border-bottom: 1px solid lightgrey;
+}
+
+
+.item_name {
+	width: 25%;
+	display: flex;
+	padding-bottom: 4px;
+	border-bottom: 1px solid lightgrey;
+}
+
+.price_of_item {
+	width: 10%;
+	display: flex;
+	align-items: center;
+	padding-bottom: 4px;
+	border-bottom: 1px solid lightgrey;
+}
+
+.quantity_of_products {
+	width: 15%;
+	display: flex;
+	align-items: center;
+	padding-bottom: 4px;
+	border-bottom: 1px solid lightgrey;
+}
+
+.tid {
+	width: 10%;
+	display: flex;
+	align-items: center;
+	padding-bottom: 4px;
+	border-bottom: 1px solid lightgrey;
+}
+
+.total_price {
+	width: 10%;
+	display: flex;
+	align-items: center;
+	padding-bottom: 4px;
+	border-bottom: 1px solid lightgrey;
+}
+
+.products {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.delete_button{
+	width: 5%;
+	display: flex;
+	align-items: center;
+	padding-bottom: 4px;
+	border-bottom: 1px solid lightgrey;
+}
+
+.totalBasket {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	padding: 10px 0;
+}
+
+.totalTitle {
+	width: 30%;
+}
+
+.totalBasketValue {
+	width: 10%;
+}
+
+.selected {
+	background-color: #949494;
+}
+
+.registrationForm {
+	display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 300px;
+            margin-top: 20px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+}
+
+input[type="submit"] {
+	background-color: #4caf50;
+	color: white;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #45a049;
+}
+
+.formelement1 label {
+	flex: 1 1 100%; /* Take up the full width */
+            margin-bottom: 8px;
+}
+
+.formelement1 input {
+	flex: 1 1 calc(100% - 16px); /* Adjusted to include padding */
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+}
+
+.transaction-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Style for table header cells */
+.transaction-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Style for table data cells */
+.transaction-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Style for buttons in the "Actions" column */
+.transaction-table button {
+    margin-right: 5px;
+}
+
+#inventoryResults th {
+	border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#inventoryResults td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#lowInventoryResults th {
+	border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#lowInventoryResults td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+
+#customersOlderThan20Results th {
+	border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#customersOlderThan20Results td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#customersByZipAndMonthResults th {
+	border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#customersByZipAndMonthResults td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#customersWithTransactionsResults th {
+	border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#customersWithTransactionsResults td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+

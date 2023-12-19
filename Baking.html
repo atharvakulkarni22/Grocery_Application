@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Baking
+	</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+	<header>
+		<div id="heading">
+			<h1>
+				My Grocery
+			</h1>
+		</div>
+	</header>
+	<nav>
+		<div class="navbarnav">
+			<strong>
+				<a href="FreshProducts.html">Fresh Products</a>
+				<a href="Frozen.html">Frozen</a>
+				<a href="Pantry.html">Pantry</a>
+				<a href="BreakfastCereal.html">Breakfast and Cereal</a>
+				<a href="Baking.html">Baking</a>
+				<a href="Snacks.html">Snacks</a>
+				<a href="Candy.html">Candy</a>
+				<a href="SpecialityShops.html">Speciality Shops</a>
+				<a href="Deals.html">Deals</a>
+				<a href="MyAccount.html">My Account</a>
+				<a href="AboutUs.html">About Us</a>
+				<a href="ContactUs.html">Contact Us</a>
+				<a href="index.html" onclick="localStorage.clear()">Sign Out</a>
+			</strong>
+		</div>
+	</nav>
+	<div class="container1">
+		<div class="row" style="text-align: right;">
+			<strong><em>
+					<p id="datetime"></p>
+					<em>
+			</strong>
+		</div>
+	</div>
+	<div class="container1">
+		<div class="row cartdiv" href="Cart.html" style="text-align: center;">
+			<a href="Cart.html">Cart <span>0</span></a>
+		</div>
+	</div>
+	<div class="container1">
+		<div class="row">
+			<h3>
+				Baking
+			</h3>
+		</div>
+	</div>
+	<div class="container1">
+		<div class="row">
+			<div class="col-md-3 columnleft">
+				<ul style="list-style-type: none">
+					<li id="sidenav"><a class="selection" onclick="filterFunction('Pie%20Fillings')"> Pie Fillings </a></li>
+					<li id="sidenav"><a class="selection" onclick="filterFunction('Crusts')"> Crusts </a></li>
+					<li id="sidenav"><a class="selection" onclick="filterFunction('Pudding%20Mixes')"> Pudding Mixes </a></li>
+					<li id="sidenav"><a class="selection" onclick="filterFunction('Pie%20Pans')"> Pie Pans </a></li>
+				</ul>
+			</div>
+			<div class="col-md-9 columnright">
+				
+			</div>
+		</div>
+		<div class="row col-md-12">
+			<footer style="text-align: center">
+				<p id="foot">Author: Atharva Kulkarni<br>
+					NetId : AJK220007</p>
+			</footer>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script>
+		filterFunction("all");
+		function filterFunction(subcat) {
+			if (subcat === 'all') {
+				fetch('products.php?category=Baking')
+					.then(response => response.json())
+					.then(data => {
+						console.log(data);
+						updateProductDisplay(data);
+					})
+					.catch(error => console.error('Error:', error));
+			} else {
+				fetch('products.php?category=Baking&subcategory='+subcat)
+					.then(response => response.json())
+					.then(data => {
+						updateProductDisplay(data);
+						console.log(data);
+					})
+					.catch(error => console.error('Error:', error));
+			}
+		}
+	</script>
+    <script>
+        $(document).ready(function () {
+            $('.product-box').click(function () {
+                $(this).addClass('selected');
+            });
+        });
+    </script>
+	<script src='finapp.js'></script>
+</body>
+</body>
+
+</html>

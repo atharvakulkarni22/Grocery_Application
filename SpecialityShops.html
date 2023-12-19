@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Speciality Shops
+	</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+	<header>
+		<div id="heading">
+			<h1>
+				My Grocery
+			</h1>
+		</div>
+	</header>
+	<nav>
+		<div class="navbarnav">
+			<strong>
+				<a href="FreshProducts.html">Fresh Products</a>
+				<a href="Frozen.html">Frozen</a>
+				<a href="Pantry.html">Pantry</a>
+				<a href="BreakfastCereal.html">Breakfast and Cereal</a>
+				<a href="Baking.html">Baking</a>
+				<a href="Snacks.html">Snacks</a>
+				<a href="Candy.html">Candy</a>
+				<a href="SpecialityShops.html">Speciality Shops</a>
+				<a href="Deals.html">Deals</a>
+				<a href="MyAccount.html">My Account</a>
+				<a href="AboutUs.html">About Us</a>
+				<a href="ContactUs.html">Contact Us</a>
+				<a href="index.html" onclick="localStorage.clear()">Sign Out</a>
+			</strong>
+		</div>
+	</nav>
+	<div class="row" style="text-align: right;">
+		<strong><em><p id="datetime"></p><em></strong>
+	</div>
+	<div align="center">
+		<div class="row">
+			<div>
+				<p id="datetime"></p>
+			</div>
+			<h3>
+				Speciality Shops
+			</h3>
+		</div>
+		<div id="specialButton">
+			<button onclick="SpecialFunction()">Special Offer!!</button>
+		</div>
+		<form id="questionnaireForm" style="display: none;">
+			<div id="question1">
+				<h2>Are you a student?</h2>
+				<label>
+					<input type="radio" name="answer" value="Yes"> Yes
+				</label>
+				<label>
+					<input type="radio" name="answer" value="No"> No
+				</label>
+				<br>
+				<br>
+				<input type="submit" value="Next">
+				<button onclick="myFunction1()">Skip</button>
+				<br>
+			</div>
+			<div id="question2" style="display: none;">
+				<h2>Are you a low income person?</h2>
+				<label>
+					<input type="radio" name="answer1" value="Yes"> Yes
+				</label>
+				<label>
+					<input type="radio" name="answer1" value="No"> No
+				</label>
+				<br>
+				<br>
+				<button onclick="myFunction()">Submit</button>
+			</div>
+			<div id="question3" style="display: none;">
+				<label>As you are a student and a low income person, you have won $100 off</label>
+			</div>
+			<div id="question4" style="display: none;">
+				<label>Sorry you did not qualify for any offer</label>
+			</div>
+		</form>
+	</div>
+	<footer align="center">
+		<p id="foot">Author: Atharva Kulkarni<br>
+			NetId : AJK220007</p>
+	</footer>
+	<script>
+		const form = document.getElementById("questionnaireForm");
+
+		form.addEventListener("submit", function (e) {
+			e.preventDefault();
+
+			const answer = document.querySelector('input[name="answer"]:checked').value;
+			if (answer === "Yes") {
+				question2.style.display = "block";
+				question1.style.display = "none";
+			} else {
+				question1.style.display = "none";
+				question4.style.display = "block";
+			}
+		});
+
+		function myFunction() {
+			const answer1 = document.querySelector('input[name="answer1"]:checked').value;
+
+			if (answer1 === "Yes") {
+				question2.style.display = "none";
+				question3.style.display = "block";
+			} else {
+				question2.style.display = "none";
+				question4.style.display = "block";
+			}
+		}
+
+		function myFunction1() {
+			question2.style.display = "block";
+			question1.style.display = "none";
+		}
+
+		function SpecialFunction() {
+			questionnaireForm.style.display = "block";
+			specialButton.style.display = "none";
+		}
+	</script>
+	<script src='finapp.js'></script>
+</body>
+
+</html>

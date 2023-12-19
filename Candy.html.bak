@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Candy
+	</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<header>
+<div id="heading">
+<h1>
+	My Grocery
+</h1>
+</div>
+</header>
+<nav>
+	<div class = "navbar">
+		<strong>
+			<a href="FreshProducts.html">Fresh Products</a>
+			<a href="Frozen.html">Frozen</a>
+			<a href="Pantry.html">Pantry</a>
+			<a href="BreakfastCereal.html">Breakfast and Cereal</a>
+			<a href="Baking.html">Baking</a>
+			<a href="Snacks.html">Snacks</a>
+			<a href="Candy.html">Candy</a>
+			<a href="SpecialityShops.html">Speciality Shops</a>
+			<a href="Deals.html">Deals</a>
+			<a href="MyAccount.html">My Account</a>
+			<a href="AboutUs.html">About Us</a>
+			<a href="ContactUs.html">Contact Us</a>
+		</strong>
+	</div>
+</nav>
+<div class="row">
+	<h3>
+		Candy
+	</h3>
+</div>
+<div class="row">
+	<div class="columnleft">
+		<ul style="list-style-type: none">
+			<a href="Candy.html"><li id="sidenav"> Candy </li></a>
+			<a href="Chocolate.html"><li id="sidenav"> Chocolate </li></a>
+		</ul>
+	</div>
+	<div class = "columnright">
+	<div style="font-size:16px">
+		<em><strong>Candies<strong><em>
+		<hr>
+	</div>
+	<div class="Products">
+		<p>
+			<img src = "sourbomb.jpg" height = "50" width = "50" style="vertical-align:center">Sour Bomb</img>
+			<div class="Price"> Price - 4.60$ </div>
+		</p>
+	</div> 
+	<hr>
+	<div class="Products">
+		<p>
+			<img src = "candies.jpg" height = "50" width = "50" style="vertical-align:center">Sweet Candies</img>
+			<div class="Price"> Price - 15.0$ </div>
+		</p>
+	</div>
+</div>
+</div>
+<footer align="center">
+  <p id="foot">Author: Atharva Kulkarni<br>
+  <a href="mailto:ajk220007@utdallas.edu">ajk220007@utdallas.edu</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<products>
+    <item>
+        <name>Apricots</name>
+        <category>Fresh Products</category>
+       <subcategory>Fruits</subcategory>
+        <price>2</price>
+        <quantity>5</quantity>
+        <image>images/apricot.jpg</image>
+    </item>
+</products>

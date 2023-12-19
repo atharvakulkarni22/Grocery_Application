@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		My Account
+	</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+	<header>
+		<div id="heading">
+			<h1>
+				My Grocery
+			</h1>
+		</div>
+	</header>
+	<nav>
+		<div class="navbarnav">
+			<strong>
+				<a href="FreshProducts.html">Fresh Products</a>
+				<a href="Frozen.html">Frozen</a>
+				<a href="Pantry.html">Pantry</a>
+				<a href="BreakfastCereal.html">Breakfast and Cereal</a>
+				<a href="Baking.html">Baking</a>
+				<a href="Snacks.html">Snacks</a>
+				<a href="Candy.html">Candy</a>
+				<a href="SpecialityShops.html">Speciality Shops</a>
+				<a href="Deals.html">Deals</a>
+				<a href="MyAccount.html">My Account</a>
+				<a href="AboutUs.html">About Us</a>
+				<a href="ContactUs.html">Contact Us</a>
+				<a href="index.html" onclick="localStorage.clear()">Sign Out</a>
+			</strong>
+		</div>
+	</nav>
+	<div class="container1">
+		<div class="row col-md-12" style="text-align: right;">
+			<strong><em>
+					<p id="datetime"></p>
+					<em>
+			</strong>
+		</div>
+	</div>
+	<div class="container1">
+		<div class="row col-md-12">
+			<h3>
+				My Account
+			</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="row col-md-12">
+			<div style="padding-left:2px">Order History</div>
+			<div>
+				<p>View transactions by month</p>
+				<label for="specificMonth">Enter Month:</label>
+				<input type="month" id="specificMonth">
+				<button onclick="loadTransactionTable(0)">View Transactions</button>
+				<div id="getTransactionsByMonth"></div>
+			</div>
+			<div>
+				<p>View transactions of last 3 months</p>
+				<button onclick="loadTransactionTable(1)">View Transactions</button>
+				<div id="getTransactions"></div>
+			</div>
+			<div>
+				<p>View transactions by year</p>
+				<label for="specificYear">Enter Year:</label>
+				<input type="number" id="specificYear">
+				<button onclick="loadTransactionTable(2)">View Transactions</button>
+				<div id="getTransactionsByYear"></div>
+			</div>
+		</div>
+		<footer align="center">
+			<p id="foot">Author: Atharva Kulkarni<br>
+				NetId : AJK220007</p>
+		</footer>
+		<script src='finapp.js'></script>
+</body>
+
+</html>

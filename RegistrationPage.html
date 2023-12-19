@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script>
+        function validateForm() {
+            var userName = document.forms["registrationForm"]["userName"].value;
+            var password = document.forms["registrationForm"]["password"].value;
+            var confirmPassword = document.forms["registrationForm"]["confirmPassword"].value;
+            var firstName = document.forms["registrationForm"]["firstName"].value;
+            var lastName = document.forms["registrationForm"]["lastName"].value;
+            var dob = document.forms["registrationForm"]["dob"].value;
+            var email = document.forms["registrationForm"]["email"].value;
+            var address = document.forms["registrationForm"]["address"].value;
+
+            if (!userName || !password || !confirmPassword || !firstName || !lastName || !dob || !email || !address) {
+                alert("All fields must be filled out");
+                return false;
+            }
+
+            if (password.length < 8) {
+                alert("Password must be at least 8 characters");
+                return false;
+            }
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match");
+                return false;
+            }
+
+            if (!dob.match(/^\d{2}\/\d{2}\/\d{4}$/)) {
+                alert("Invalid date of birth format. Use MM/DD/YYYY.");
+                return false;
+            }
+
+            if (!email.includes('@') || !email.includes('.')) {
+                alert("Invalid email format.");
+                return false;
+            }
+
+            // Add more specific validation for date of birth and email as needed
+
+            return true;
+        }
+    </script>
+</head>
+
+<body style="display: flex; align-items: center; justify-content: center; height: 100vh;">
+
+    <h2 style="text-align: center;">User Registration</h2>
+
+    <form name="registrationForm" action="RegisterUser.php" method="post" onsubmit="return validateForm()">
+        <label class="formelement1" for="userName">User Name:</label>
+        <input  class="formelement1" type="text" name="userName" required><br>
+
+        <label class="formelement1" for="password">Password:</label>
+        <input class="formelement1" type="password" name="password" required><br>
+
+        <label class="formelement1" for="confirmPassword">Confirm Password:</label>
+        <input class="formelement1" type="password" name="confirmPassword" required><br>
+
+        <label class="formelement1" for="firstName">First Name:</label>
+        <input class="formelement1" type="text" name="firstName" required><br>
+
+        <label class="formelement1" for="lastName">Last Name:</label>
+        <input class="formelement1" type="text" name="lastName" required><br>
+
+        <label class="formelement1" for="dob">Date of Birth (MM/DD/YYYY):</label>
+        <input class="formelement1" type="text" name="dob" placeholder="MM/DD/YYYY" required><br>
+
+        <label class="formelement1" for="email">Email:</label>
+        <input class="formelement1" type="text" name="email" required><br>
+
+        <label class="formelement1" for="address">Address:</label>
+        <input class="formelement1" type="text" name="address" required><br>
+
+        <input class="formelement1" type="submit" value="Register">
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		My Account
+	</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+	<header>
+		<div id="heading">
+			<h1>
+				My Grocery
+			</h1>
+		</div>
+	</header>
+	<nav>
+		<div class="navbarnav">
+			<strong>
+                <a href="AdmitAccount.html">Admin Account</a>
+				<a href="index.html" onclick="localStorage.clear()">Sign Out</a>
+			</strong>
+		</div>
+	</nav>
+	<div class="container1">
+		<div class="row col-md-12" style="text-align: right;">
+			<strong><em>
+					<p id="datetime"></p>
+					<em>
+			</strong>
+		</div>
+	</div>
+	<div class="container1">
+		<div class="row col-md-12">
+			<h3>
+				My Account
+			</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="row col-md-12" style="text-align: left;">
+			<p class="adminHeadings">Upload Inventory</p>
+            <div id="fileUpload" style="margin-left: 20px;">
+                <button onclick="showUploadForm()">Upload Inventory</button>
+                <div id="uploadForm" style="display: none;">
+                    <form id="fileUploadForm">
+                        <label for="fileType">Select file type:</label>
+                        <select id="fileType" name="fileType">
+                            <option value="xml">XML</option>
+                            <option value="json">JSON</option>
+                        </select>
+                        <br>
+                        <label for="file">Choose file:</label>
+                        <input type="file" id="file" name="file" accept=".xml, .json">
+                        <br>
+                        <input type="button" value="Upload" onclick="uploadFile()">
+                    </form>
+                </div>
+            </div>
+
+            <p></p>
+            <div class="adminHeadings">
+                <p>View Inventory Table</p>
+                <button onclick="viewInventory()">View Inventory</button>
+                <div id="inventoryResults"></div>
+            </div>
+
+            <p></p>
+            <div class="adminHeadings">
+                <p>Low Inventory Items</p>
+                <button onclick="viewLowInventory()">View Low Inventory</button>
+                <div id="lowInventoryResults"></div>
+            </div>
+
+            <p></p>
+            <div class="adminHeadings">
+                <p>Customers with Transactions</p>
+                <label for="specificDate">Enter Date:</label>
+                <input type="date" id="specificDate">
+                <button onclick="viewCustomersWithTransactions()">View Customers</button>
+                <div id="customersWithTransactionsResults"></div>
+            </div>
+
+            <p></p>
+            <div class="adminHeadings">
+                <p>Customers by Zip Code and Month</p>
+                <label for="zipCode">Enter Zip Code:</label>
+                <input type="text" id="zipCode">
+                <label for="specificMonth">Enter Month:</label>
+                <input type="month" id="specificMonth">
+                <button onclick="viewCustomersByZipAndMonth()">View Customers</button>
+                <div id="customersByZipAndMonthResults"></div>
+            </div>
+
+            <p></p>
+            <div class="adminHeadings">
+                <p>Modify Inventory Item</p>
+                <label for="itemNumber">Enter Item Number:</label>
+                <input type="text" id="itemNumber">
+                <label for="newUnitPrice">New Unit Price:</label>
+                <input type="text" id="newUnitPrice">
+                <label for="newQuantity">New Quantity:</label>
+                <input type="text" id="newQuantity">
+                <button onclick="modifyInventoryItem()">Modify Item</button>
+                <div id="modifyInventory"></div>
+            </div>
+
+            <p></p>
+            <div class="adminHeadings">
+                <p>Customers older than 20 with more than 3 transactions</p>
+                <button onclick="viewCustomersOlderThan20()">View Customers</button>
+                <div id="customersOlderThan20Results"></div>
+            </div>
+		</div>
+		<footer align="center">
+			<p id="foot">Author: Atharva Kulkarni<br>
+				NetId : AJK220007</p>
+		</footer>
+		<script src='finapp.js'></script>
+        <script type="text/javascript" src="admin.js"></script>
+</body>
+
+</html>
