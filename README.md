@@ -31,13 +31,4 @@ cancel each transaction if the status of the transaction is not shopped transact
 Clone the repository.
 git clone https://github.com/atharvakulkarni22/GroceryApplication.git
 
-##Images
-<img width="1264" alt="image" src="https://github.com/atharvakulkarni22/GroceryApplication/assets/55804217/9153232c-a45d-4229-979b-2fbb55253973">
-
-
-<img width="1277" alt="image" src="https://github.com/atharvakulkarni22/GroceryApplication/assets/55804217/8315f479-58dd-47a7-ba63-5da7c44fd686">
-
-
-<img width="1269" alt="image" src="https://github.com/atharvakulkarni22/GroceryApplication/assets/55804217/29ce269b-d92c-45d3-bcdd-46eb240ba53f">
-
 
